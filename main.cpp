@@ -177,6 +177,7 @@ void testp8() {
     std::cout << result << "+++" << std::endl;
 }
 extern void findabc(void);
+extern int findMaximum(char *fileName);
 void test(int idx) {
     switch(idx) {
         case 8:
@@ -188,6 +189,8 @@ void test(int idx) {
         case 10:
             sumOfPrimes(2000000); break;
             //std::cout << std::ios_base::hex << sumOfPrimes(2000000) <<std::endl; break;
+        case 11:
+            findMaximum("./numtrix.txt");
         default:
             break;
     };
@@ -206,7 +209,7 @@ int main(int argc, char** argv) {
     //    cout << findithPrime(i) << "\t";
     //cout << endl;
     //cout << "the 10001th prime is " << findithPrime(10001) << endl;
-    test(10);
+    test(11);
     return 0;
 }
 
